@@ -51,4 +51,60 @@
     isolation: isolate;
   }
 
-  
+
+
+
+
+
+
+
+
+
+
+.main {
+    display: flex;
+}
+
+.circle img{
+    border-radius: 50%;
+    width: 30rem;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+  /*gallery*/
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .gallery div {
+    width: 40%;
+    height: 40vh;
+    margin: 4% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+  }
+  .gallery div .hide {
+    width: 70%;
+    height: 10vh;
+    background-color: #fff;
+    display: none;
+  }
+  .gallery div .hide h2 {
+    font-size: 2.2rem;
+  }
+  .gallery div:hover .hide {
+    display: block;
+  }
