@@ -1,1 +1,221 @@
-/* Add CSS styling here */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+
+/* *{
+    box-sizing:border-box;
+    border:1px solid grey;
+    max-width: 100%;
+} */
+
+
+
+html {
+    font-size: 85%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #D9D9D9;
+    color: #284b63;
+}
+
+nav{
+    background-color: #D9D9D9;
+    border: 5px solid #353535;
+}
+
+
+header, footer{
+    background-color: #353535;
+}
+
+.links{
+    display: flex;
+    ;
+    
+}
+
+a{
+    /* background-color:#284b63; */
+    font-size: 2rem;
+    text-decoration: none;
+    color: #D9D9D9;
+    background-color: #353535;
+    padding: 9px;
+    border: 2px solid #D9D9D9;
+}
+
+a:hover{
+    background: #D9D9D9;
+    color:#284b63
+}
+
+h1{
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: 7rem;
+    margin-left: 4px;
+    color: #D9D9D9;
+}
+
+.main {
+    display: flex;
+}
+
+.circle img{
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    width: 50rem;
+}
+
+.about-me{
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15rem;
+    font-size: 2.5rem;
+}
+
+
+
+  /*gallery*/
+
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+  .gallery div {
+    width: 22%;
+    height: 44vh;
+    margin-bottom: 4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+
+  }
+
+  .gallery div .hide {
+    width: 70%;
+    height: 6vh;
+    background-color: #D9D9D9;
+    display: none;
+  }
+  .gallery div .hide h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .gallery div:hover .hide {
+    display: block;
+  }
+
+
+
+  .project1{
+      background-image: url(https://images.unsplash.com/photo-1642977631384-174cc982300f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  }
+
+  .project2{
+      background-image: url(https://images.unsplash.com/photo-1636316911620-a5ca85b89bf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  }
+
+  .project3{
+      background-image: url(https://images.unsplash.com/photo-1636316881979-e083c2adea49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  }
+
+  .project4{
+      background-image: url(https://images.unsplash.com/photo-1635703328706-94088a8bd781?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Njh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  }
+
+  .project5{
+      background-image: url(https://images.unsplash.com/photo-1641223691321-26a732a43a42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  }
+
+  .project6{
+      background-image: url(https://images.unsplash.com/photo-1636316882487-0cb57ae2e711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  }
+
+  .project7{
+      background-image: url(https://images.unsplash.com/photo-1642977605152-24ccfb63f16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  }
+
+  .project8{
+      background-image: url(https://images.unsplash.com/photo-1641223692132-fb331e5c9f03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  }
+
+  footer{
+      padding: 4rem;
+  }
+
+  footer h2{
+      color: #D9D9D9;
+      text-align: center;
+  }
+  
+  .button{
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+  }
